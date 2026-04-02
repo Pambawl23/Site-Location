@@ -60,11 +60,11 @@ export function TransportPage() {
   ]
   return (
     <main className="pt-24 pb-20 bg-gray-50 min-h-screen">
-      <div className="relative bg-brand-blue py-20 lg:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-blue to-transparent" />
-        </div>
+      <div className="relative  py-20 lg:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/Gmail/IMG_3461.jpeg')" }}/>
+           {/* Overlay sombre */}
+        <div className="absolute inset-0 bg-black/60" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.h1
             initial={{
