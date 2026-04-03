@@ -9,7 +9,7 @@ export function Services() {
     'Service de transport interurbain fiable et sécurisé. Nous assurons vos déplacements de groupes, transferts aéroport et voyages à travers le Sénégal avec des chauffeurs expérimentés.',
     icon: <Truck size={40} className="text-accent" />,
     image:
-    'https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=2070&auto=format&fit=crop',
+    'public/images/Gmail/импорт Турция.jpeg',
     features: [
     'Transport interurbain',
     'Voyages de groupe',

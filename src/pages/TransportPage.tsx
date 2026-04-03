@@ -10,8 +10,8 @@ export function TransportPage() {
       return: 'Tous les jours - 07h00 et 14h00',
       duration: '~4h30',
       price: '10 000 FCFA',
-      seats: '15 places',
-      type: 'Minibus climatisé',
+      seats: '4 places',
+      type: 'Véhicule climatisée',
     },
     {
       id: 'stlouis-dakar',
@@ -21,8 +21,8 @@ export function TransportPage() {
       return: 'Tous les jours - 08h00 et 15h00',
       duration: '~4h30',
       price: '10 000 FCFA',
-      seats: '15 places',
-      type: 'Minibus climatisé',
+      seats: '4 places',
+      type: 'Véhicule climatisée',
     },
     {
       id: 'Stlouis-ziguinchor',
@@ -32,8 +32,8 @@ export function TransportPage() {
       return: 'Mar, Jeu, Sam, Lun - 10h00',
       duration: '~10h00',
       price: '15 000 FCFA',
-      seats: '15 places',
-      type: 'Minibus climatisé',
+      seats: '4 places',
+      type: 'Véhicule climatisée',
     },
     {
       id: 'stlouis-mbour',
@@ -42,9 +42,9 @@ export function TransportPage() {
       departure: 'Mar, Jeu, Sam - 08h30',
       return: 'Mar, Jeu, Sam - 15h00',
       duration: '~5h00',
-      price: '12 000 FCFA',
-      seats: '7 places',
-      type: 'Véhicule 7 places',
+      price: '12 500 FCFA',
+      seats: '4 places',
+      type: 'Véhicule climatisée',
     },
     {
       id: 'dakar-stlouis',
@@ -54,7 +54,6 @@ export function TransportPage() {
       return: 'Mercredi et Samedi - 06h00',
       duration: '~8h00',
       price: '80 000 FCFA',
-      seats: '30 places',
       type: 'Taxi bagages',
     },
   ]

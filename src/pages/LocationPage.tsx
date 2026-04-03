@@ -10,7 +10,7 @@ export function LocationPage() {
       <div className="relative py-20 lg:py-24 overflow-hidden">
         {/* Image de fond */}
         <div className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('images/Gmail/IMG_3461.jpeg')" }}/>
+          style={{ backgroundImage: "url('/images/Gmail/IMG_3461.jpeg')" }}/>
   {/* Overlay sombre */}
   <div className="absolute inset-0 bg-black/60" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -115,9 +115,6 @@ export function LocationPage() {
                   <div className="flex items-center justify-between mt-auto">
                     <div>
                       <p className="text-xs text-gray-500">Tarif mensuel</p>
-                      <p className="font-semibold text-brand-blue">
-                        {car.priceMonth}
-                      </p>
                     </div>
                     <div className="w-10 h-10 rounded-full bg-brand-blue/5 flex items-center justify-center text-brand-blue group-hover:bg-brand-blue group-hover:text-white transition-colors">
                       <ArrowRight size={20} />
