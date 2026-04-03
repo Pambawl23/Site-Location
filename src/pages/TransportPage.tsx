@@ -1,62 +1,8 @@
 import { motion } from 'framer-motion'
 import { Clock, ArrowRight, Calendar, Users } from 'lucide-react'
+import { trips } from '../images_voitures';
+
 export function TransportPage() {
-  const trips = [
-    {
-      id: 'dakar-stlouis',
-      from: 'Dakar',
-      to: 'Saint-Louis',
-      departure: 'Tous les jours - 08h00 et 15h00',
-      return: 'Tous les jours - 07h00 et 14h00',
-      duration: '~4h30',
-      price: '10 000 FCFA',
-      seats: '4 places',
-      type: 'Véhicule climatisée',
-    },
-    {
-      id: 'stlouis-dakar',
-      from: 'Saint-Louis',
-      to: 'Dakar',
-      departure: 'Tous les jours - 07h00 et 14h00',
-      return: 'Tous les jours - 08h00 et 15h00',
-      duration: '~4h30',
-      price: '10 000 FCFA',
-      seats: '4 places',
-      type: 'Véhicule climatisée',
-    },
-    {
-      id: 'Stlouis-ziguinchor',
-      from: 'Saint-Louis',
-      to: 'Ziguinchor',
-      departure: 'Lun, Mer, Ven, Dim - 09h00',
-      return: 'Mar, Jeu, Sam, Lun - 10h00',
-      duration: '~10h00',
-      price: '15 000 FCFA',
-      seats: '4 places',
-      type: 'Véhicule climatisée',
-    },
-    {
-      id: 'stlouis-mbour',
-      from: 'Saint-Louis',
-      to: 'Mbour',
-      departure: 'Mar, Jeu, Sam - 08h30',
-      return: 'Mar, Jeu, Sam - 15h00',
-      duration: '~5h00',
-      price: '12 500 FCFA',
-      seats: '4 places',
-      type: 'Véhicule climatisée',
-    },
-    {
-      id: 'dakar-stlouis',
-      from: 'Dakar',
-      to: 'Saint-Louis',
-      departure: 'Mardi et Vendredi - 06h00',
-      return: 'Mercredi et Samedi - 06h00',
-      duration: '~8h00',
-      price: '80 000 FCFA',
-      type: 'Taxi bagages',
-    },
-  ]
   return (
     <main className="pt-24 pb-20 bg-gray-50 min-h-screen">
       <div className="relative  py-20 lg:py-24 overflow-hidden">
