@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 
-const carImages = [
-  <img src='/images/Gmail/IMG_3461.jpeg'/> // ⚠️ pas de "public/"
-];
+const heroImageSrc = '/images/Gmail/IMG_3461.jpeg';
 
 export function Hero() {
   return (
@@ -64,7 +62,7 @@ export function Hero() {
             className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl"
           >
             <img
-              src={carImages[0]}
+              src={heroImageSrc}
               alt="Véhicule principal"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
