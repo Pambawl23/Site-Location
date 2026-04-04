@@ -6,7 +6,7 @@ export function Fleet() {
     name: 'RAV4',
     type: 'Location',
     image:
-    'images/Gmail/IMG_3467.jpeg',
+    <img src='images/Gmail/IMG_3467.jpeg'/>,
     capacity: '4 places',
     luggage: '2 bagages',
     transmission: 'Manuelle',
@@ -16,7 +16,7 @@ export function Fleet() {
     name: 'RAV4',
     type: 'Location',
     image:
-    'images/Gmail/IMG_3467.jpeg',
+    <img src='images/Gmail/IMG_3467.jpeg' />,
     capacity: '4 places',
     luggage: '4 bagages',
     transmission: 'Manuelle',
@@ -26,7 +26,7 @@ export function Fleet() {
     name: 'AVENSIS',
     type: 'Location',
     image:
-    'images/Gmail/IMG_3463.jpeg',
+    <img src='images/Gmail/IMG_3463.jpeg' />,
     capacity: '5 places',
     luggage: 'Soute',
     transmission: 'Manuelle',
