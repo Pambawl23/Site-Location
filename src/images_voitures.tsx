@@ -39,7 +39,7 @@ export const cars = [
   id: 'avensis-break-royal',
   name: 'Avensis Break Royal',
   image:
-  { src : {img('/images/Gmail/IMG_3463.jpeg')},
+  { src : img('/images/Gmail/IMG_3463.jpeg')},
   desc: 'Berline de luxe pour vos déplacements professionnels ou événements spéciaux.',
   priceDay: '30 000 FCFA',
   seats: 5,
