@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const carImages = [
-  '/images/Gmail/IMG_3461.jpeg' // ⚠️ pas de "public/"
+  <img src='/images/Gmail/IMG_3461.jpeg'/> // ⚠️ pas de "public/"
 ];
 
 export function Hero() {
