@@ -1,5 +1,5 @@
-# Deploy Jekyll site to GitHub Pages (Node 24 ready)
-name: Deploy Jekyll with GitHub Pages
+# Deploy Vite site to GitHub Pages
+name: Deploy Vite with GitHub Pages
 
 on:
   push:
@@ -25,25 +25,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site with Vite
+        run: npm run build
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: false
-
-      - name: Install Jekyll directly
-        run: gem install jekyll webrick
-
-      - name: Build site with Jekyll
-        run: jekyll build --source ./_Site-Location --destination ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_Site-Location
+          path: ./dist   # 👈 Vite génère dans dist/ par défaut
 
   deploy:
     environment:
