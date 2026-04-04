@@ -8,7 +8,7 @@ export const cars = [
   priceDay: '35 000 FCFA',
   seats: 5,
   transmission: 'Manuelle',
-  ac: true
+  ac: true 
 },
 {
   id: 'toyota-rav4-noir',
