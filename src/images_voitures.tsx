@@ -1,6 +1,3 @@
-import { img } from './imagePath'
-
-
 export const cars = [
 {
   id: 'toyota-rav4',
