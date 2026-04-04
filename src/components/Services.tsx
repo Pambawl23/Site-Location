@@ -13,7 +13,6 @@ export function Services() {
     features: [
     'Transport interurbain',
     'Voyages de groupe',
-    'Transferts aéroport',
     'Chauffeurs professionnels'],
 
     href: '/transport'
