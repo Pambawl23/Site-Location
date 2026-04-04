@@ -38,7 +38,7 @@ jobs:
         run: gem install jekyll webrick
 
       - name: Build site with Jekyll
-        run: jekyll build --destination ./_site
+        run: jekyll build --source ./Site-Location --destination ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
