@@ -9,7 +9,7 @@ export function Services() {
     'Service de transport interurbain fiable et sécurisé. Nous assurons vos déplacements de groupes, transferts aéroport et voyages à travers le Sénégal avec des chauffeurs expérimentés.',
     icon: <Truck size={40} className="text-accent" />,
     image:
-    'public/images/Gmail/импорт Турция.jpeg',
+    { src: img('/images/Gmail/импорт Турция.jpeg')},
     features: [
     'Transport interurbain',
     'Voyages de groupe',
@@ -23,7 +23,7 @@ export function Services() {
     'Une large gamme de véhicules disponibles pour vos besoins personnels ou professionnels. Location courte et longue durée avec des conditions flexibles et des tarifs compétitifs.',
     icon: <Car size={40} className="text-brand-blue" />,
     image:
-    'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop',
+    { src: img('/images/Gmail/IMG_3456.jpeg')},
     features: [
     'Courte et longue durée',
     'Véhicules récents',
