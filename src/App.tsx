@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage';
 import { TransportPage } from './pages/TransportPage';
 import { LocationPage } from './pages/LocationPage';
 
+
 export function App() {
   return (
     <div className="min-h-screen bg-gray-50 font-sans flex flex-col">
@@ -14,6 +15,7 @@ export function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/transport" element={<TransportPage />} />
           <Route path="/location" element={<LocationPage />} />
+          
         </Routes>
       </div>
       <Footer />
