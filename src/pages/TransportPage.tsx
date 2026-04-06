@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Clock, Calendar, Users } from 'lucide-react'
+import {  Users } from 'lucide-react'
 import { trips } from '../images_voitures';
 
 export function TransportPage() {
@@ -7,9 +7,8 @@ export function TransportPage() {
   const buildWhatsappURL = (trip: typeof trips[0]) => {
     const message =
       `Bonjour, je souhaite réserver le trajet suivant :\n\n` +
-      `Trajet : ${trip.from} → ${trip.to}\n` +
-      `Tarif : ${trip.price}` 
-    return 'whatsapp://send?phone=221770417603&text=' + encodeURIComponent(message);
+      `Trajet : ${trip.from} → ${trip.to}\n`
+    return 'whatsapp://send?phone=+221771710411&text=' + encodeURIComponent(message);
   };
 
   return (
@@ -69,32 +68,30 @@ export function TransportPage() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="flex items-start gap-3">
-                      <Calendar className="text-brand-light mt-0.5" size={18} />
-                      <div>
-                        <p className="text-sm font-semibold text-gray-900">Aller</p>
+                        <p className="text-sm font-semibold text-gray-900">Disponibilté</p>
                         <p className="text-sm text-gray-600">{trip.departure}</p>
-                      </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Clock className="text-brand-light mt-0.5" size={18} />
-                      <div>
-                        <p className="text-sm font-semibold text-gray-900">Retour</p>
-                        <p className="text-sm text-gray-600">{trip.return ?? 'Non disponible'}</p>
-                      </div>
+                      <div className="flex items-center gap-2 whitespace-nowrap">
+                    {trip.perPerson && (
+                        <span className="text-xl font-bold text-brand-blue">{trip.price_person}/personne</span>
+          )}
                     </div>
                   </div>
                 </div>
+              </div>
 
                 {/* Droite : Prix + Bouton */}
                 <div className="p-6 md:p-8 md:w-72 flex flex-col justify-center bg-gray-50/50">
-                  <div className="mb-4">
-                    <p className="text-sm text-gray-500 font-medium mb-1">Tarif par personne</p>
+                  <div className="mb-6">
+                    <p className="text-base text-gray-500 font-medium mb-1">Tarif pour location</p>
                     <p className="text-3xl font-bold text-brand-blue">{trip.price}</p>
                   </div>
 
                   <div className=" flex items-center gap-2 text-sm text-gray-600 mb-6">
-                    <Users size={16} />
-                    <span>{trip.seats} • {trip.type}</span>
+                    <Users size={16}/>
+                    <span>{trip.seats} places</span>
+                    <span>|{trip.type}</span>
                   </div>
 
                   {/* Bouton WhatsApp */}

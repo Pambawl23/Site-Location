@@ -1,4 +1,4 @@
-import { Truck, Phone, MapPin, ChevronRight } from 'lucide-react';
+import { Truck, Phone, MapPin, ChevronRight, Mail } from 'lucide-react';
 export function Footer() {
   return (
     <footer className="bg-brand-dark text-white pt-16 pb-8 border-t border-white/10">
@@ -73,6 +73,10 @@ export function Footer() {
               <li className="flex items-start text-gray-400 text-sm">
                 <Phone size={18} className="mr-3 text-accent shrink-0 mt-0.5" />
                 <span>(+221) 77 171 04 11</span>
+              </li>
+              <li className="flex items-start text-gray-400 text-sm">
+                <Mail size={18} className="mr-3 text-accent shrink-0 mt-0.5" />
+                <span>voyagealy@gmail.com</span>
               </li>
             </ul>
 

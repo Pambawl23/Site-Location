@@ -52,7 +52,7 @@ export function LocationPage() {
       `Climatisation : ${selectedCar.ac ? 'Oui' : 'Non'}`;
 
     window.open(
-      'https://wa.me/221770417603?text=' + encodeURIComponent(msgAdmin),
+      'https://wa.me/+221771710411?text=' + encodeURIComponent(msgAdmin),
       '_blank'
     );
 

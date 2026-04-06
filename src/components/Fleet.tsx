@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Users, Briefcase, Settings } from 'lucide-react';
+import { Users, Settings } from 'lucide-react';
 export function Fleet() {
   const vehicles = [
   {
@@ -7,7 +7,6 @@ export function Fleet() {
     type: 'Location',
     image: '/images/Gmail/IMG_3467.jpeg',
     capacity: '4 places',
-    luggage: '2 bagages',
     transmission: 'Manuelle',
     price: 'Sur devis'
   },
@@ -16,7 +15,6 @@ export function Fleet() {
     type: 'Location',
     image: '/images/Gmail/IMG_3467.jpeg',
     capacity: '4 places',
-    luggage: '4 bagages',
     transmission: 'Manuelle',
     price: 'Sur devis'
   },
@@ -24,8 +22,7 @@ export function Fleet() {
     name: 'AVENSIS',
     type: 'Location',
     image: '/images/Gmail/IMG_3463.jpeg',
-    capacity: '5 places',
-    luggage: 'Soute',
+    capacity: '4 places',
     transmission: 'Manuelle',
     price: 'Sur devis'
   }];
@@ -92,10 +89,6 @@ export function Fleet() {
                   <div className="flex items-center text-sm text-gray-600">
                     <Users size={16} className="mr-2 text-brand-light" />
                     {vehicle.capacity}
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Briefcase size={16} className="mr-2 text-brand-light" />
-                    {vehicle.luggage}
                   </div>
                   <div className="flex items-center text-sm text-gray-600 col-span-2">
                     <Settings size={16} className="mr-2 text-brand-light" />
